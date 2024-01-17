@@ -1,5 +1,6 @@
 package problem.easy;
 
+import java.lang.reflect.AccessibleObject;
 import java.util.List;
 
 public class Problem3 {
@@ -12,6 +13,6 @@ public class Problem3 {
      */
     public static double sumOfList(List<Double> numbers) {
         // 여기에 코드 작성
-        return 0.0;
+        return numbers.stream().reduce(0., Double::sum);
     }
 }

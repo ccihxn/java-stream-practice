@@ -12,6 +12,9 @@ public class Problem9 {
      */
     public static List<String> transformStrings(List<String> strings) {
         // 여기에 코드 작성
-        return null;
+        return strings.stream().map(x -> {
+            if (x.length() >= 3) return x.toUpperCase();
+            else return x;
+        }).toList();
     }
 }

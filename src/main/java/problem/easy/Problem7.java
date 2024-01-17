@@ -1,6 +1,8 @@
 package problem.easy;
 
+import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Problem7 {
 
@@ -12,6 +14,6 @@ public class Problem7 {
      */
     public static List<String> sortStrings(List<String> strings) {
         // 여기에 코드 작성
-        return null;
+        return strings.stream().sorted().collect(Collectors.toList());
     }
 }

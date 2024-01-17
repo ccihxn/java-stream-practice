@@ -2,6 +2,7 @@ package problem.easy;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.OptionalInt;
 
 public class Problem8 {
 
@@ -13,6 +14,6 @@ public class Problem8 {
      */
     public static Optional<Integer> findFirstEven(List<Integer> numbers) {
         // 여기에 코드 작성
-        return Optional.empty();
+        return Optional.of(numbers.stream().filter(x -> x % 2 == 0).findFirst()).orElse(Optional.empty());
     }
 }
